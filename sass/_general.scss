@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.list,
+.site-list,
+.progect {
+    list-style: none;
+}
+.qualities-list,
+.services-list,
+.team-img {
+    list-style: none;
+}
+
+body {
+    background-color: var(--basic-text-or-background);
+    font-family: var(--type-roboto);
+    color: var(--basic-text-colour);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

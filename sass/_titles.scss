@@ -1,0 +1,42 @@
+ .hero__header {
+    color: var(--basic-text-or-background);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    text-align: center;
+    width: 698px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.qualities-list>.qualities-list-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--secondary-text-colour);
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.services,
+.team {
+    color: var(--secondary-text-colour);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+}
+.team-img-header {
+    color: var(--secondary-text-colour);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.progect-img-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-colour);
+    margin-bottom: 4px;
+}

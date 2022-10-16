@@ -1,0 +1,36 @@
+
+.categories {
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}.categories-btn {
+    background-color: var(--others-background);
+    color: var(--secondary-text-colour);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 22px;
+    display: inline-block;
+
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-colour);
+            color: var(--basic-text-or-background);
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+                &:nth-child(5) {
+                    margin-right: 0px;
+                }
+}
+

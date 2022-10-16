@@ -1,0 +1,42 @@
+.gualities-ul {
+    display: flex;
+    gap: 30px;
+}
+
+.qualities-list {
+    width: 270px;
+    margin-right: 30px;
+
+     &:nth-child(1n) {
+            margin: 0;
+        }
+}
+
+.icons-qualities {
+    width: 270px;
+    height: 120px;
+    background-color: var(--others-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.icon-css {
+    width: 70px;
+    height: 70px;
+    fill: none;
+}
+
+.qualities-list-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--secondary-text-colour);
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.qualities-list-paragraf {
+    margin-top: 10px;
+}

@@ -1,0 +1,21 @@
+@import "./utils/variables";
+
+@import "general";
+@import "titles";
+
+//Studio//
+@import "./components_studio/header";
+@import "./components_studio/hero";
+@import "./components_studio/qualities";
+@import "./components_studio/services";
+@import "./components_studio/team";
+@import "./components_studio/customers";
+@import "./components_studio/footer";
+
+//Form//
+@import "./speaker_form/backdrop";
+@import "./speaker_form/form";
+
+//Portfolio//
+@import "./components_portfolio/categories";
+@import "./components_portfolio/progects";

@@ -1,0 +1,81 @@
+.progects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 0;
+}
+
+.progect {
+    background-color: var(--basic-text-or-background);
+}
+
+.container-cards {
+    border-bottom: 1px solid var(--cards-border);
+    border-left: 1px solid var(--cards-border);
+    border-right: 1px solid var(--cards-border);
+    padding: 20px 24px;
+}
+
+.progect-img-paragraf {
+    color: var(--basic-text-colour);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.portfolio-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.progect-link {
+    display: block;
+    text-decoration: none;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+                &:hover .product-overlay {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+}
+
+
+
+.portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+
+   &:hover .product-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
+
+.product-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    color: var(--basic-text-or-background);
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    padding: 63px 24px;
+    opacity: 0;
+
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+}
+
+
