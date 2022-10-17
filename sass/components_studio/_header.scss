@@ -3,14 +3,16 @@
 }
 
 .cont-navul {
+   
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
+   
+ } 
+    
 .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -19,6 +21,8 @@
     -ms-flex-align: center;
     align-items: center;
 }
+/*
+
 
 .logo {
     color: var(--accent-colour);
