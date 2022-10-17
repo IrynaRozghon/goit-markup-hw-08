@@ -18,13 +18,26 @@
     text-transform: uppercase;
     margin-top: 30px;
 }
-.services,
+.services {
+    color: var(--secondary-text-colour);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.7;
+        text-align: center;
+}
 .team {
+    font-size: 28px;
     color: var(--secondary-text-colour);
     font-weight: 700;
+    text-align: center;
+    line-height: 1.8;
+
+    @media screen and (min-width: 1600px){
     font-size: 36px;
     line-height: 1.7;
-    text-align: center;
+    
+    }
+    
 }
 .team-img-header {
     color: var(--secondary-text-colour);
