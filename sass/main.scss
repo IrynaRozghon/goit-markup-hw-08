@@ -2,9 +2,11 @@
 
 @import "general";
 @import "titles";
-@import "./components_studio/container";
+
+
 
 //Studio//
+@import "./components_studio/mixins";
 @import "./components_studio/header";
 @import "./components_studio/hero";
 @import "./components_studio/qualities";
@@ -12,6 +14,7 @@
 @import "./components_studio/team";
 @import "./components_studio/customers";
 @import "./components_studio/footer";
+@import "./components_studio/container";
 
 //Form//
 @import "./speaker_form/backdrop";
