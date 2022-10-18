@@ -11,13 +11,15 @@ gap: 30px;
 
      @media screen and (min-width: 768px){
          flex-basis: calc((100% - 60px) / 3);
+    
 
     }
 
         @media screen and (min-width: 1600px) {
             flex-basis: calc((100% - 150px) / 6);
-          width: 170px;
+        
     }
+        }
 
 .customer-link {
     height: 92px;
@@ -30,12 +32,13 @@ gap: 30px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic-bezier);
+    
 
     &:hover,
     &:focus {
         color: var(--accent-colour);
     }
-}
+
 
 @media screen and (min-width: 768px){
     width: 226px;
