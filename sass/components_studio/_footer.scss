@@ -47,12 +47,21 @@
 }
 
 .container-footer {
+    text-align: center;
+    @media screen and (min-width: 768px){
     display: flex;
     align-items: baseline;
+    }
+    
 }
 
 .social-footer {
-    margin-left: 70px;
+text-align: center;
+
+@media screen and (min-width: 768px){
+margin-left: 70px;
+}
+    
 }
 
 .footer-paragraf {
@@ -97,9 +106,14 @@
 }
 
 .subscribe-element {
+text-align: center;
+
+    @media screen and (min-width: 768px){
     margin-top: 20px;
     display: flex;
     justify-content: baseline;
+    }
+    
 }
 
 .subscribe-input {
@@ -129,38 +143,44 @@
 }
 
 .subscribe-button {
+
+        width: 200px;
+    
+        background: var(--accent-colour);
+        box-shadow: 0px 4px 4px var(--box-shadow-color);
+        border-radius: 4px;
+        color: var(--basic-text-or-background);
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+    
+        padding: 10px 0;
+    
+        border: none;
+        cursor: pointer;
+        margin-left: 12px;
+    
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--cubic-bezier);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--button-background);
+        }
+    @media screen and (min-width: 768px){
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-
-    width: 200px;
-
-    background: var(--accent-colour);
-    box-shadow: 0px 4px 4px var(--box-shadow-color);
-    border-radius: 4px;
-    color: var(--basic-text-or-background);
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-
-    padding: 10px 0;
-
-    border: none;
-    cursor: pointer;
-    margin-left: 12px;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cubic-bezier);
+    }
+    
+    
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
-    background-color: var(--button-background);
-}
+
 
 .subscribe-svg {
     width: 24px;

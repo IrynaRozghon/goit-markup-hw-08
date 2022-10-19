@@ -31,10 +31,6 @@
   
 }
 
-.img-photo {
-    display: block;
-}
-
 .team-img {
     width: 450px;
     background: var(--basic-text-or-background);
@@ -43,12 +39,17 @@
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     @media screen and (min-width: 768px){
     width: 354px;
-    
+
     &:last-child {
-        margin-right: 0;
-    }
+            margin-right: 0;
+        }
+   
         }
     @media screen and (min-width: 1600px) {
     width: 270px;

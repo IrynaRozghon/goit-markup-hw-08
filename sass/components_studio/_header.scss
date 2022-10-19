@@ -9,8 +9,8 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    }
    
- } 
     
 .main-nav {
     
@@ -26,23 +26,38 @@
 
 .logo {
     color: var(--accent-colour);
-    font-size: 26px;
-    line-height: 1.19;
     font-weight: 700;
     font-family: var(--type-raleway);
     text-decoration: none;
+    font-size: 24px;
+    line-height: 1.16;
+    padding: 16px 0px;
 
     &-studio {
             color: var(--logo-text-color);
-        }
+    }
+
+    @media screen and (min-width: 1600px){
+    font-size: 26px;
+    line-height: 1.19;
+    }
+    
 }
 
 .site-nav {
-    
+    display: none;
+
+    @media screen and (min-width: 768px){
+    display: flex;
+    margin-left: 87px;
+    }
+
+    @media screen and (min-width: 1600px){
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     margin-left: 93px;
+    }
+    
 }
 
  .site-list:not(:last-child) {
@@ -50,10 +65,12 @@
 }
 
 .site-link {
+
+    @media screen and (min-width: 768px){
     color: var(--secondary-text-colour);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 1.14;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     text-decoration: none;
     padding-top: 32px;
@@ -68,8 +85,16 @@
 
     &:hover,
     &:focus {
-            color: var(--accent-colour);
+        color: var(--accent-colour);
+    }
+    }
+        @media screen and (min-width: 1600px) {
+    font-size: 14px;
+    line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
         }
+   
                
 }
 
@@ -82,20 +107,29 @@
 }
 
  .contacts {
+    display: none;
+
+    @media screen and (min-width: 768px){
     display: flex;
+    flex-wrap: wrap;
+    margin-left: 96px;
+
+    }
+
+    @media screen and (min-width: 1600px){
     margin-left: auto;
 }
+ }
 
 .contacts-link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--basic-text-colour);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 1.14;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     text-decoration: none;
 
@@ -107,16 +141,29 @@
         &:focus {
             color: var(--accent-colour);
         }
+          @media screen and (min-width: 1600px){
+            font-size: 14px;
+            line-height: 1.14;
+
+          }
 }
 
 .contacts-link-mail {
-    fill: var(--basic-text-colour);
 
-        &:hover,
-        &:focus {
-            fill: var(--accent-colour);
-        }
+    @media screen and (min-width: 768px){
+    fill: var(--basic-text-colour);
+    padding-bottom: 10px;
+    
+    &:hover,
+    &:focus {
+        fill: var(--accent-colour);
+    }
 }
+@media screen and (min-width: 1600px){
+    
+}
+    }
+   
 
 .contact-link-icon {
     fill: var(--basic-text-colour);
@@ -148,6 +195,7 @@
 }
 
  .current {
+
     position: relative;
     display: block;
     color: var(--accent-colour);
