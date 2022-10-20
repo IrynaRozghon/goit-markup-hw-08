@@ -810,6 +810,11 @@ body {
   font-family: var(--type-raleway);
   text-decoration: none;
 }
+@media screen and (min-width: 1600px) {
+  .footer-logo {
+    text-align: left;
+  }
+}
 
 .footer-logo-studio {
   color: var(--basic-text-or-background);
@@ -937,14 +942,18 @@ body {
 }
 @media screen and (min-width: 768px) {
   .subscribe-element {
-    text-align: left;
     margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .subscribe-element {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: baseline;
         -ms-flex-pack: baseline;
             justify-content: baseline;
+    text-align: left;
   }
 }
 
