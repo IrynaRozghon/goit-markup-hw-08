@@ -1,10 +1,10 @@
 .footer {
     background-color: var(--secondary-background);
-    padding-top: 60px;
-    padding-bottom: 60px;
+   
 }
 
 .footer-logo {
+    padding-top: 60px;
     margin-bottom: 20px;
     display: block;
 
@@ -40,26 +40,37 @@
 
 .footer-list {
     list-style: none;
+    margin-bottom: 8px;
+ 
+    @media screen and (min-width: 1600px){
+    margin-bottom: 9px;
+    text-align: left; 
+}
+        &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
 }
 
-.footer-list:not(:last-child) {
-    margin-bottom: 9px;
-}
 
 .container-footer {
     text-align: center;
-    @media screen and (min-width: 768px){
+
+        @media screen and (min-width: 1600px){
     display: flex;
     align-items: baseline;
-    }
-    
+        }
 }
 
 .social-footer {
 text-align: center;
+margin-top: 60px;
 
 @media screen and (min-width: 768px){
-margin-left: 70px;
+margin-left: 165px;
+}
+@media screen and (min-width: 1600px){
+   margin-left: 70px; 
 }
     
 }
@@ -68,9 +79,13 @@ margin-left: 70px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    color: var(--basic-text-or-background);
-    text-transform: uppercase;
-    margin-bottom: 20px;
+        color: var(--basic-text-or-background);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+ @media screen and (min-width: 1600px){
+    text-align: left;
+}
 }
 
 .team-social {
@@ -109,6 +124,7 @@ margin-left: 70px;
 text-align: center;
 
     @media screen and (min-width: 768px){
+        text-align: left;
     margin-top: 20px;
     display: flex;
     justify-content: baseline;
@@ -179,7 +195,6 @@ text-align: center;
     
     
 }
-
 
 
 .subscribe-svg {

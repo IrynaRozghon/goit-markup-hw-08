@@ -84,16 +84,15 @@ text-align: center;
     justify-content: center;
     align-items: center;
     margin-top: 16px;
+    
 }
 
 .team-list {
-@media screen and (min-width: 768px){
+margin-right: 10px;
 
     &:not(:last-child) {
         margin-right: 10px;
     }
-}
-
 }
 
 .social-link {
