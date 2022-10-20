@@ -19,8 +19,14 @@
   <body>
     <header class="page-header">
       <div class="container cont-navul">
+
         <nav class="main-nav">
           <a href="./index.html" class="logo">Web<span class="logo-studio">Studio</span></a>
+          <button type="button" class="burger-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="burger-opensvg">
+              <use href="./images/icons.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
           <ul class="site-nav">
             <li class="site-list">
               <div class="current">
@@ -387,10 +393,40 @@
         </div>
       </section>
     </main>
+    <!--mobile-menu-->
+    <div class="menu-container js-menu-container is-open" id="mobile-menu">
+    <button type="button" class="burger-button js-close-menu">
+      <svg class="burger-closesvg">
+        <use href="./images/icons.svg#icon-close_24px"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu">
+      <li class="mobile-list">
+          <a class="site-link site-link-ctyd" href="./index.html">Студія</a></li>
+      <li class="mobile-list"><a class="site-link" href="./portfolio.html">Портфоліо</a></li>
+      <li class="mobile-list"><a class="site-link" href="">Контакти</a></li>
+    </ul>
+    <ul class="mobile-contact">
+      <li class="mobile-list">
+        <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+      <li class="mobile-list">
+        <a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </li>
+    </ul>
+    <ul class="social-mobile">
+      <li class="social-list">Instagram<span class="gap">|</span></li>
+      <li class="social-list">Twitter<span class="gap">|</span></li>
+      <li class="social-list">Facebook<span class="gap">|</span></li>
+      <li class="social-list">LinkedIn</li>
+    </ul>
+
+    </div>
     <!--Footer-->
     <footer class="footer">
       <div class="container container-footer">
-        <div>
+        <div class="cont-tablet">
+        <div class="logofoot-container">
           <a href="./index.html" class="footer-logo"
             >Web<span class="footer-logo-studio">Studio</span></a
           >
@@ -446,6 +482,7 @@
               </a>
             </li>
           </ul>
+        </div>
         </div>
         <div class="subscribe-footer">
           <p class="footer-paragraf">Підпишіться на розсилку</p>
@@ -542,6 +579,9 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

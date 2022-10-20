@@ -24,8 +24,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
     border-radius: 4px;
     padding: 8px;
     background-color: var(--basic-text-or-background);
@@ -34,6 +34,11 @@
 
     transition: transform 250ms var(--cubic-bezier), opacity 250ms var(--cubic-bezier),
         visibility 250ms var(--cubic-bezier);
+
+    @media screen and (min-width: 1600px){
+min-width: 528px;
+    min-height: 581px;
+    }
 }
 
 .modal__close {
