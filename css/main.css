@@ -809,6 +809,23 @@ body {
   padding-bottom: 60px;
 }
 
+.container-footer {
+  text-align: center;
+}
+@media screen and (min-width: 1600px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .footer-logo {
   margin-bottom: 20px;
   display: block;
@@ -862,20 +879,6 @@ body {
   margin-bottom: 9px;
 }
 
-.container-footer {
-  text-align: center;
-}
-@media screen and (min-width: 1600px) {
-  .container-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
-}
-
 .cont-tablet {
   padding-bottom: 60px;
 }
@@ -884,24 +887,17 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .cont-tablet {
-    -webkit-box-pack: baseline;
-        -ms-flex-pack: baseline;
-            justify-content: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 76px;
+    padding-bottom: 0;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .logofoot-container {
-    margin-left: 76px;
-  }
-}
 @media screen and (min-width: 1600px) {
   .logofoot-container {
-    padding-left: 0;
+    padding: 0 auto;
     margin-left: 0;
   }
 }
@@ -972,12 +968,11 @@ body {
 }
 
 .subscribe-footer {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-left: auto;
-}
-@media screen and (min-width: 1600px) {
-  .subscribe-footer {
-    margin-left: 93px;
-  }
+  margin-top: 60px;
 }
 
 .subscribe-form {
@@ -989,21 +984,23 @@ body {
 }
 @media screen and (min-width: 768px) {
   .subscribe-element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1600px) {
   .subscribe-element {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: baseline;
         -ms-flex-pack: baseline;
             justify-content: baseline;
-    text-align: left;
   }
 }
 
@@ -1034,6 +1031,7 @@ body {
 @media screen and (min-width: 1600px) {
   .subscribe-input {
     margin: 0;
+    width: 358px;
   }
 }
 
