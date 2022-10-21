@@ -62,42 +62,68 @@ transition-timing-function: var(--cubic-bezier);
     }
         @media screen and (min-width: 768px) {
             display: none;
+        
         }
 }
 
 
-.mobile-menu {
+.mobile-menu{
 list-style: none;
-font-size: 40px;
-line-height: 1.17;
-font-weight: 500;
-color: #212121;
-letter-spacing: 0.02em;
-text-decoration: none;
-padding-top: 32px;
-padding-bottom: 32px;
-display: block;
--webkit-transition-property: color;
-transition-property: color;
--webkit-transition-duration: 250ms;
- transition-duration: 250ms;
--webkit-transition-timing-function: var(--cubic-bezier);
-transition-timing-function: var(--cubic-bezier);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-colour);
-    }
 }
 
-.mobile-list {
+.mobile-list,
+.contact-list {
+margin-bottom: 32px;
 
+&:not(:last-child) {
+margin-bottom: 32px;
+}
+
+}
+.mobile-contact {
+    list-style: none;
+    margin-top: 302px;
+}
+
+.mail-link {
+font-weight: 500;
+font-size: 24px;
+line-height: 1.16;
+letter-spacing: 0.02em;
+
+color: var(--basic-text-colour);
 }
 
 .social-mobile {
+margin-top: 64px;
+display: flex;
+justify-content: flex-start;
+text-align: center;
+align-items: center;
+list-style: none;
+
 
 }
 
 .social-list {
+font-weight: 500;
+font-size: 18px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--accent-colour);
+-webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: var(--cubic-bezier);
+    transition-timing-function: var(--cubic-bezier);
 
+}
+.gap{
+  width: 22px;
+  height: 0px;
+  transform: rotate(90deg);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+  margin-right: 10px;
 }

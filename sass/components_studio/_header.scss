@@ -65,34 +65,35 @@
 }
 
 .site-link {
-
-    @media screen and (min-width: 768px){
-    color: var(--secondary-text-colour);
-    font-size: 12px;
+    font-size: 40px;
+    line-height: 1.17;
     font-weight: 500;
-    line-height: 1.16;
+    color: var(--secondary-text-colour);
     letter-spacing: 0.02em;
     text-decoration: none;
+    -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 250ms;
+        transition-duration: 250ms;
+        -webkit-transition-timing-function: var(--cubic-bezier);
+        transition-timing-function: var(--cubic-bezier);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-colour);
+        }
+    @media screen and (min-width: 768px){
+    font-size: 12px;
+    line-height: 1.16;
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 250ms;
-    transition-duration: 250ms;
-    -webkit-transition-timing-function: var(--cubic-bezier);
-    transition-timing-function: var(--cubic-bezier);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-colour);
-    }
+    
     }
         @media screen and (min-width: 1600px) {
     font-size: 14px;
     line-height: 1.14;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
         }
    
                
@@ -122,25 +123,33 @@
  }
 
 .contacts-link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--accent-colour);
     
+    @media screen and (min-width: 768px){
+    color: var(--basic-text-colour);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--basic-text-colour);
+    
     font-size: 12px;
-    font-weight: 500;
     line-height: 1.16;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+   
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic-bezier);
-    
-        &:hover,
-        &:focus {
-            color: var(--accent-colour);
-        }
+
+    &:hover,
+    &:focus {
+        color: var(--accent-colour);
+    }
+    }
+   
           @media screen and (min-width: 1600px){
             font-size: 14px;
             line-height: 1.14;
@@ -159,9 +168,7 @@
         fill: var(--accent-colour);
     }
 }
-@media screen and (min-width: 1600px){
-    
-}
+
     }
    
 
