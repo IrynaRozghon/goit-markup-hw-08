@@ -138,6 +138,14 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
+@media screen and (min-width: 1600px) {
+  .cont-navul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .main-nav {
   display: -webkit-box;
@@ -209,17 +217,11 @@ body {
 }
 @media screen and (min-width: 768px) {
   .site-link {
-    font-size: 12px;
-    line-height: 1.16;
+    font-size: 14px;
+    line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .site-link {
-    font-size: 14px;
-    line-height: 1.14;
   }
 }
 
@@ -297,6 +299,11 @@ body {
   }
   .contacts-link-mail:hover, .contacts-link-mail:focus {
     fill: var(--accent-colour);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1600px) {
+  .contacts-link-mail {
+    padding-bottom: 0;
   }
 }
 
@@ -890,8 +897,16 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    margin-left: 76px;
-    padding-bottom: 0;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .cont-tablet {
+    margin: 0;
   }
 }
 
@@ -972,7 +987,6 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-left: auto;
-  margin-top: 60px;
 }
 
 .subscribe-form {
@@ -994,10 +1008,18 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (min-width: 1600px) {
   .subscribe-element {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: baseline;
         -ms-flex-pack: baseline;
             justify-content: baseline;
@@ -1081,6 +1103,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
   width: 200px;
   height: 50px;
   background: var(--accent-colour);
@@ -1241,6 +1264,7 @@ body {
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--basic-text-colour);
 }
 

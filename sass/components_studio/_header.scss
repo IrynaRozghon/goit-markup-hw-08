@@ -9,6 +9,11 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    @media screen and (min-width: 1600px){
+    flex-direction: row;
+
+    }
+    
     }
    
     
@@ -83,18 +88,14 @@
             color: var(--accent-colour);
         }
     @media screen and (min-width: 768px){
-    font-size: 12px;
-    line-height: 1.16;
+    font-size: 14px;
+    line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
     
     }
-        @media screen and (min-width: 1600px) {
-    font-size: 14px;
-    line-height: 1.14;
-    
-        }
+        
    
                
 }
@@ -167,6 +168,9 @@
     &:focus {
         fill: var(--accent-colour);
     }
+        @media screen and (min-width: 1600px){
+            padding-bottom: 0;
+        }
 }
 
     }
