@@ -1,15 +1,32 @@
+.backdrop-mob {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    
+        overflow-y: scroll;
+}
+
+
 .menu-container {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+@media screen and (min-width: 480px){
+position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-background-color: #ffffff;
-padding: 48px 40px;
+    padding: 48px 40px;
 
-transform: translateX(100%);
-transition: transform 250em;
+
+    transform: translateX(100%);
+    transition: transform 250em;
+}
+    
+
+
 
 @media screen and (min-width: 767px) {
 

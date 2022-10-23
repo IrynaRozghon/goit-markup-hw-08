@@ -130,13 +130,15 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.cont-navul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .cont-navul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1600px) {
   .cont-navul {
@@ -346,12 +348,15 @@ body {
 }
 
 .hero {
-  padding: 118px 60px;
-  max-width: 480px;
-  max-height: 400px;
+  width: 100%;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -366,8 +371,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 118px 204px;
-    max-width: 768px;
+    width: 100%;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/header-img-tab-1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header-img-tab-1x.jpg);
   }
@@ -380,10 +384,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding-bottom: 200px;
-    padding-top: 200px;
-    max-width: 1600px;
-    max-height: 600px;
+    height: 600px;
+    width: 100%;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/header-img-desktop-1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header-img-desktop-1x.jpg);
   }
@@ -1146,37 +1148,53 @@ body {
 }
 
 .container {
-  max-width: 480px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1600px) {
   .container {
-    max-width: 1200px;
+    min-width: 1200px;
   }
 }
 
-.menu-container {
+.backdrop-mob {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-  padding: 48px 40px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform 250em;
-  transition: -webkit-transform 250em;
-  transition: transform 250em;
-  transition: transform 250em, -webkit-transform 250em;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 480px) {
+  .menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 250em;
+    transition: -webkit-transform 250em;
+    transition: transform 250em;
+    transition: transform 250em, -webkit-transform 250em;
+  }
 }
 @media screen and (min-width: 767px) {
   .menu-container {
