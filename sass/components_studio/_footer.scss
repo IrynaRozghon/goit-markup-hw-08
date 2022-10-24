@@ -7,7 +7,7 @@
 .container-footer {
     text-align: center;
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: center;
         align-items: baseline;
@@ -26,7 +26,7 @@
             font-family: var(--type-raleway);
             text-decoration: none;
             
-            @media screen and (min-width: 1600px){
+            @media screen and (min-width: 1200px){
             text-align: left;
             }
           
@@ -58,7 +58,7 @@
     list-style: none;
     margin-bottom: 8px;
  
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1200px){
     margin-bottom: 9px;
     text-align: left; 
 }
@@ -80,14 +80,14 @@ padding-bottom: 60px;
   
     padding-bottom: 60px;
     }
-         @media screen and (min-width: 1600px){
+         @media screen and (min-width: 1200px){
             margin: 0;
          }
 }
 
 .logofoot-container {
     
-        @media screen and (min-width: 1600px){
+        @media screen and (min-width: 1200px){
         padding: 0 auto; 
         margin-left: 0;
         }
@@ -103,7 +103,7 @@ padding-left: 165px;
 margin: 0;
 
 }
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1200px){
    margin-left: 70px; 
    margin-right: 0;
    padding: 0;
@@ -121,7 +121,7 @@ margin: 0;
         text-align: center;
        
 
- @media screen and (min-width: 1600px){
+ @media screen and (min-width: 1200px){
     text-align: left;
 }
 }
@@ -172,7 +172,7 @@ margin: 0;
     flex-direction: column;
 
     }
-        @media screen and (min-width: 1600px){
+        @media screen and (min-width: 1200px){
     flex-direction: row;
     justify-content: baseline;
    
@@ -200,7 +200,7 @@ margin: 0;
     @media screen and (min-width: 768px){
     width: 450px;
     }
-        @media screen and (min-width: 1600px){
+        @media screen and (min-width: 1200px){
             margin: 0;
             width: 358px;
         }
@@ -253,7 +253,7 @@ margin: 0;
        
     }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
 margin-left: 12px;
 
                 }

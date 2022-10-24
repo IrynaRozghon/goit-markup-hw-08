@@ -1,10 +1,16 @@
 .speaker-form {
+   width: 100%;
+   padding: 40px 40px;
+
+    @media screen and (min-width: 480px){
     width: 450px;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px 40px;
+   
+    }
+    
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
             width: 528px;
         }
 
@@ -159,7 +165,7 @@
     letter-spacing: 0.03em;
 
     color: var(--basic-text-colour);
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1200px){
     font-size: 14px;
     line-height: 1.7;
 }
@@ -174,19 +180,39 @@
 
 
 .checkebox__link {
-    color: var(--accent-colour);
-    padding-left: 5px;
-    text-decoration: none;
+color: var(--accent-colour);
+    padding-left: o;
+    
 
     &::before {
-            content: '';
-            position: absolute;
-            background: var(--accent-colour);
-            border-radius: 2px;
-            width: 100%;
-            height: 0.5px;
-            bottom: 4px;
-        }
+        content: '';
+        position: absolute;
+        background: var(--accent-colour);
+        border-radius: 2px;
+        width: 100%;
+        height: 0.5px;
+        bottom: 3px;}
+
+@media screen and (min-width: 480px) {
+padding-left: 5px;
+text-decoration: none;
+
+     
+   @media screen and (min-width: 1200px){
+&::before {
+        content: '';
+        position: absolute;
+        background: var(--accent-colour);
+        border-radius: 2px;
+        width: 100%;
+        height: 0.5px;
+        bottom: 5px;
+    }
+   }
+}
+    
+        
+                 
 }
 
 .btm-form {

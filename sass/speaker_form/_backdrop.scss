@@ -21,21 +21,24 @@
     transform: translate(-50%, -50%) scale(1.1);
 }
 .modal {
+   
     position: absolute;
     top: 50%;
     left: 50%;
     min-width: 200px;
     min-height: 609px;
     border-radius: 4px;
-    padding: 8px;
+   
     background-color: var(--basic-text-or-background);
 
     transform: translate(-50%, -50%) scale(1);
 
     transition: transform 250ms var(--cubic-bezier), opacity 250ms var(--cubic-bezier),
         visibility 250ms var(--cubic-bezier);
+    
+    
 
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1200px){
     min-width: 528px;
     min-height: 581px;
     }

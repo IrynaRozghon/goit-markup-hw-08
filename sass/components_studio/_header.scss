@@ -52,7 +52,7 @@
             color: var(--logo-text-color);
     }
 
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1200px){
     font-size: 26px;
     line-height: 1.19;
     }
@@ -67,7 +67,7 @@
     margin-left: 87px;
     }
 
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1200px){
     display: -webkit-box;
     display: -ms-flexbox;
     margin-left: 93px;
@@ -155,12 +155,17 @@
 
 .contacts-link {
     font-weight: 500;
-    font-size: 34px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 1.6;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--accent-colour);
-    
+
+    @media screen and (min-width: 480px){
+    font-size: 34px;
+    line-height: 1.17;
+    }
+   
     @media screen and (min-width: 768px){
     color: var(--basic-text-colour);
     display: flex;
