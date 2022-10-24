@@ -1,57 +1,48 @@
-.backdrop-mob {
+.menu-container {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    overflow: auto;
     background-color: #ffffff;
     
-        overflow-y: scroll;
-}
-
-
-.menu-container {
-@media screen and (min-width: 480px){
-position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    padding: 48px 40px;
-
-
     transform: translateX(100%);
     transition: transform 250em;
-}
+    height: 100%;
+    width: 100%;
+
+    @media screen and (min-width: 767px) {
+            display: none;
     
-
-
-
-@media screen and (min-width: 767px) {
-
-        display: none;
-
-    }
+        }
 }
 
 .menu-container.is-open {
     transform: translateX(0);
 }
+.content-mobile {
+
+    background-color: #ffffff;
+    padding: 48px 40px;
+    position: absolute;
+    width: 100%;
+    height: 796px;
+
+}
 
 .burger-button {
-width: 40px;
-height: 40px;
-display: flex;
-position: absolute;
-align-items: center;
-justify-content: center;
-background-color: #ffffff;
-cursor: pointer;
-border: none;
-outline: none;
-top: 10px;
-right: 10px;
+   width: 40px;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    top: 10px;
+    right: 10px;
+
 
 @media screen and (min-width: 768px){
     display: none;
@@ -84,7 +75,8 @@ transition-timing-function: var(--cubic-bezier);
 }
 
 
-.mobile-menu{
+
+.menu{
 list-style: none;
 }
 
